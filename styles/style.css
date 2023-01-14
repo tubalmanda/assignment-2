@@ -1,24 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
 }
- 
+
 /*--------------------------
   common styles declaration
 -------------------------- */
-body{
-    width: 1920px;
+body {
+  width: 1920px;
+  margin: 0 auto;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.gen-title {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 50px 0px 0px 228px;
+  color: #131313;
+}
+
+.com-para {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
 }
 
 /* -------------------
   Header style start
 -------------------- */
-header{
-    background-color: rgba(255, 144, 14, 0.1);
-    height: 100vh;
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+
 }
-.nav-container{
-    display: flex;
-    justify-content: space-between;
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
 }
+
+.nav-container ul {
+  display: flex;
+  gap: 30px;
+  margin-top: 63px;
+  margin-right: 230px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+}
+
+.nav-container li {
+  list-style: none;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 64px
+}
+
+.header-para {
+  width: 868px;
+  margin-top: 25px;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.btn-header {
+  width: 180px;
+  height: 64px;
+  background: #FF900E;
+  border-radius: 8px;
+  border-style: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 50px;
+}
+.header-img img {
+  border-radius: 8px;
+  margin-bottom: 35px;
+}
+
+/* -------------------
+   Main section start
+-------------------- */
