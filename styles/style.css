@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+ 
+/*--------------------------
+  common styles declaration
+-------------------------- */
+body{
+    width: 1920px;
+}
+
+/* -------------------
+  Header style start
+-------------------- */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    height: 100vh;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
