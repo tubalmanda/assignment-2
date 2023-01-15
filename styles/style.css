@@ -1,18 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
-/*--------------------------
-  common styles declaration
--------------------------- */
+/* -------------
+ Common styles
+-------------- */
 body {
-  width: 1920px;
+  /* width: 100%; */
   margin: 0 auto;
   font-family: 'Work Sans', sans-serif;
 }
-
 
 .gen-title {
   font-weight: 700;
@@ -24,52 +23,67 @@ body {
 .com-para {
   font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
   color: #727272;
 }
 
-/* -------------------
-  Header style start
--------------------- */
+/* -------------
+Header start
+--------------- */
 header {
   background-color: rgba(255, 144, 14, 0.1);
-
 }
 
+/* ----------
+  Nav Start 
+------------*/
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 130px;
 }
 
-.nav-container ul {
+/* --------------
+  Menu bar start 
+-----------------*/
+.navbar {
+  margin-top: 63px;
+  margin-left: 670px;
+}
+
+.menu {
   display: flex;
   gap: 30px;
-  margin-top: 63px;
-  margin-right: 230px;
   font-weight: 500;
   font-size: 18px;
-  color: #424242;
 }
 
-.nav-container li {
-  list-style: none;
+.menu a {
+  text-decoration: none;
+  color: #424242;
+  padding: 10px;
+}
+
+.menu a:hover {
+  background-color: #FF900E;
 }
 
 .header-content {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
-  margin-top: 100px;
 }
 
 .header-title {
   font-weight: 700;
-  font-size: 64px
+  font-size: 64px;
+  margin-bottom: 25px;
 }
 
 .header-para {
-  width: 868px;
-  margin-top: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
   line-height: 26px;
   margin-bottom: 32px;
 }
@@ -85,11 +99,167 @@ header {
   color: white;
   margin-bottom: 50px;
 }
-.header-img img {
-  border-radius: 8px;
-  margin-bottom: 35px;
+
+.imge-responsive {
+  margin-bottom: 45px;
 }
 
-/* -------------------
-   Main section start
--------------------- */
+.imge-responsive img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* -----------------------------------
+Section - Team Information - Start
+------------------------------------- */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  margin-bottom: 130px;
+}
+
+.team-pics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 85px;
+}
+
+/* Team Content star */
+.team-content {
+  margin-left: 73px;
+  width: 530px;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 45px;
+  color: #727272;
+  margin-bottom: 24px;
+}
+
+.team-btn {
+  width: 180px;
+  height: 64px;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  background: #FF900E;
+  border-radius: 8px;
+  border: none;
+  margin-top: 32px;
+}
+
+/* ------------------------
+  Section - Feature Start
+-------------------------- */
+
+
+
+
+/*---------------------
+  Responsive - Mobile
+--------------------- */
+@media screen and (max-width: 480px) {
+  body {
+    /* background-color: blueviolet; */
+  }
+
+  .nav-container {
+    flex-direction: column;
+    margin-bottom: 3px;
+  }
+
+  .gen-title {
+    margin: 10px auto;
+    font-size: 16px;
+  }
+  .com-para{
+    line-height: inherit;
+  }
+  .navbar {
+    margin: 0px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu a {
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #FF900E;
+    color: white;
+    font-size: 14px;
+  }
+
+  .header-title {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .header-para {
+    font-size: 14px;
+    line-height: inherit;
+    margin-bottom: 5px;
+  }
+
+  .btn-header {
+    width: 140px;
+    border-radius: 7px;
+    height: 34px;
+    font-size: 16px;
+    background-color: #FF900E;
+    margin-bottom: 10px;
+  }
+
+  .imge-responsive {
+    margin-bottom: 15px;
+  }
+
+  .imge-responsive img {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  /* Section - Team Information - Start */
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-pics {
+    margin-top: 5px;
+  }
+
+  .team-pics {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-content {
+    width: auto;
+    margin: 0;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+  }
+  .team-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .team-btn {
+    margin-top: 10px;
+  }
+
+}
