@@ -13,10 +13,9 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-.gen-title {
+.com-title {
   font-weight: 700;
   font-size: 45px;
-  margin: 50px 0px 0px 228px;
   color: #131313;
 }
 
@@ -42,6 +41,15 @@ header {
   justify-content: center;
   margin-bottom: 130px;
 }
+
+.nav-title {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 50px 0px 0px 228px;
+  color: #131313;
+}
+
+
 
 /* --------------
   Menu bar start 
@@ -114,7 +122,7 @@ header {
 /* -----------------------------------
 Section - Team Information - Start
 ------------------------------------- */
-section {
+.team-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,6 +171,77 @@ section {
 /* ------------------------
   Section - Feature Start
 -------------------------- */
+.section-feature{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+}
+
+.feature-content {
+  margin-top: 54px;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+{
+  width: 468px;
+  border-left: 4px solid #FF900E;
+  padding-left: 21px;
+  margin-bottom: 24px;
+}
+
+ {
+  width: 586px;
+}
+
+
+.feature-box {
+  width: 586px;
+  height: 171px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px 42px 30px 30px;
+  margin-top: 30px;
+}
+
+.feature-box h4 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-pic img {
+  border-radius: 8px;
+  width: 84%;
+  margin-left: 137px;
+  border-radius: 8px;
+  margin-top: -40px;
+  /* ------- Negative Value !!!!!!!!!! ------ */
+}
+
+.feature-btn {
+  margin-left: 30px;
+  margin-top: -100px;
+  height: 200px;
+  width: 342px;
+  background-color: #FF900E;
+  color: white;
+  font-weight: 700;
+  font-size: 65px;
+  border: none;
+  border-radius: 8px;
+}
+
 
 
 
@@ -180,13 +259,15 @@ section {
     margin-bottom: 3px;
   }
 
-  .gen-title {
+  .nav-title {
     margin: 10px auto;
     font-size: 16px;
   }
-  .com-para{
+
+  .com-para {
     line-height: inherit;
   }
+
   .navbar {
     margin: 0px;
   }
@@ -238,6 +319,7 @@ section {
   /* Section - Team Information - Start */
   .team-container {
     flex-direction: column;
+    margin-bottom: 16px;
   }
 
   .team-pics {
@@ -254,12 +336,34 @@ section {
     padding: 10px;
     margin: 5px 0 5px 0;
   }
+
   .team-title {
     font-size: 18px;
     margin-bottom: 5px;
   }
+
   .team-btn {
     margin-top: 10px;
   }
 
+
+  /* Section - Feature - Responsive */
+  .section-feature {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .feature-content {
+    margin-top: 30px;
+  }
+
+  .feature-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 15px;
+}
 }
