@@ -13,6 +13,13 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ;
+}
+
 .com-title {
   font-weight: 700;
   font-size: 45px;
@@ -171,7 +178,7 @@ Section - Team Information - Start
 /* ------------------------
   Section - Feature Start
 -------------------------- */
-.section-feature{
+.section-feature {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,14 +200,14 @@ Section - Team Information - Start
   font-size: 45px;
 }
 
-{
+.feature-line {
   width: 468px;
   border-left: 4px solid #FF900E;
   padding-left: 21px;
   margin-bottom: 24px;
 }
 
- {
+  {
   width: 586px;
 }
 
@@ -242,6 +249,175 @@ Section - Team Information - Start
   border-radius: 8px;
 }
 
+/* -------------------
+  Some facts start
+-------------------- */
+.some-facts-container {
+  width: 1440px;
+  margin: 0 auto;
+
+}
+
+.some-facts-content {
+
+  margin-top: 130px;
+}
+
+.facts-title {
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 24px;
+}
+
+.facts-para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.statistics-content {
+  margin-top: 100px;
+  width: 240px;
+  height: 240px;
+
+  padding-top: 45px;
+  text-align: center;
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  transition: background-color 2s ease-out;
+}
+
+.statistics-content:hover {
+  background-color: rgb(137, 221, 137);
+  color: white;
+  cursor: pointer;
+}
+
+.stat-nbr {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+  color: #424242;
+  text-align: center;
+}
+
+.stat-p {
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+
+}
+
+/* --------------------
+ Our Sponspors Style
+--------------------- */
+.spon-containter {
+  text-align: center;
+  margin-top: 180px;
+  width: 1440px;
+}
+
+.spon-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+}
+
+.spon-para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+
+/* --------------
+sponsors Logo
+---------------- */
+.spon-list {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.spon-list img {
+  filter: grayscale(1);
+}
+
+/* --------------------
+Bonus Section Style
+-------------------- */
+.update-container {
+  margin-top: 130px;
+}
+
+.subs-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.subs-para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subcrib-container {
+  width: 1440px;
+  height: 200px;
+  background-color: #727272;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 130px;
+  border-radius: 10px;
+}
+
+.subcrib-container input {
+  margin-right: 50px;
+  padding: 10px;
+}
+
+.subs-btn {
+  background-color: #FF900E;
+  color: #FFFFFF;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* -----------------------
+Footer Section Start 
+------------------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container {
+  width: 1440px;
+  height: 100px;
+  background: #FFF4E7;
+  border-radius: 8px;
+  margin-bottom: 130px;
+  padding-top: 42px;
+  text-align: center;
+}
 
 
 
@@ -319,7 +495,7 @@ Section - Team Information - Start
   /* Section - Team Information - Start */
   .team-container {
     flex-direction: column;
-    margin-bottom: 16px;
+    margin-bottom: 3px;
   }
 
   .team-pics {
@@ -333,12 +509,12 @@ Section - Team Information - Start
   .team-content {
     width: auto;
     margin: 0;
-    padding: 10px;
+    padding: 0 20px;
     margin: 5px 0 5px 0;
   }
 
   .team-title {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 5px;
   }
 
@@ -352,6 +528,7 @@ Section - Team Information - Start
     display: flex;
     flex-direction: column;
   }
+
   .feature-container {
     flex-direction: column;
     width: auto;
@@ -363,7 +540,101 @@ Section - Team Information - Start
 
   .feature-title {
     font-weight: 700;
-    font-size: 18px;
-    margin-left: 15px;
-}
+    font-size: 22px;
+    margin-left: 104px;
+  }
+
+  .feature-title-para {
+    padding: 0 130px;
+  }
+
+  .feature-box {
+    /* width: 586px; */
+    /* height: 171px; */
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+    border-radius: 8px;
+    /* padding: 30px 42px 30px 30px; */
+    margin-top: 0px;
+    padding: 10px 130px;
+  }
+
+  .feature-pic img {
+    border-radius: 8px;
+    width: 80%;
+    /* margin-left: 137px; */
+    border-radius: 8px;
+    margin-top: 0px;
+  }
+
+  .feature-btn {
+    margin: 0 auto;
+    margin: 5px 0px 0px 120px;
+  }
+
+  /* ---------------------
+    Some facts responsive 
+  ----------------------- */
+  .facts-title {
+    font-size: 22px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .facts-para {
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+
+
+
+  /* statistics responsive */
+  .statistics {
+    width: fit-content;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .statistics-content {
+    margin-top: 15px;
+    margin-left: 62px;
+  }
+
+  /* --------------------
+    Spon list responsive  
+    ---------------------*/
+  .spon-containter {
+    margin-top: 25px;
+  }
+
+  .spon-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .spon-para {
+    padding: 0 10px;
+  }
+
+  .spon-list {
+    width: fit-content;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+
+  .spon-list img {
+    width: 60%;
+  }
+
+  /* Bonus Section Responsive  */
+  .update-container {
+    margin-top: 25px;
+  }
+  .subs-title {
+    font-size: 22px;
+  }
+  .subs-para {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
 }
